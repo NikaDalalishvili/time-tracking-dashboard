@@ -1,4 +1,4 @@
-import data from './data.json' assert { type: 'json' };
+import data from '../data/data.json' assert { type: 'json' };
 
 const buttons = document.querySelectorAll('.time-btn');
 
