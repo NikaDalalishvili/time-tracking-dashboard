@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link rel="stylesheet" href="./assets/styles/styles.css">
+  <script src="./script.js" type="module"></script>
 </head>
 <body>
   <main>
@@ -25,9 +26,9 @@
             </div>
           </div>
           <div class="time">
-            <button class="time-btn">Daily</button>
-            <button class="time-btn active">Weekly</button>
-            <button class="time-btn">Monthly</button>
+            <button id="daily-btn" class="time-btn">Daily</button>
+            <button id="weekly-btn" class="time-btn active">Weekly</button>
+            <button id="monthly-btn" class="time-btn">Monthly</button>
           </div>
         </div>
         <div class="card work">
@@ -35,7 +36,9 @@
           <div class="inner-content">
             <div class="inner-header">
               <p class="title">Work</p>
-              <button class="card-btn"><img src="./assets/images/icon-ellipsis.svg" width="21" heigh="5" alt="icon of ellipsis"></button>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
             </div>
             <div class="inner-body">
               <p class="current"><span class="current-hours">32</span>hrs</p>
@@ -48,7 +51,9 @@
           <div class="inner-content">
             <div class="inner-header">
               <p class="title">Play</p>
-              <button class="card-btn"><img src="./assets/images/icon-ellipsis.svg" width="21" heigh="5" alt="icon of ellipsis"></button>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
             </div>
             <div class="inner-body">
               <p class="current"><span class="current-hours">10</span>hrs</p>
@@ -61,7 +66,9 @@
           <div class="inner-content">
             <div class="inner-header">
               <p class="title">Study</p>
-              <button class="card-btn"><img src="./assets/images/icon-ellipsis.svg" width="21" heigh="5" alt="icon of ellipsis"></button>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
             </div>
             <div class="inner-body">
               <p class="current"><span class="current-hours">4</span>hrs</p>
@@ -74,7 +81,9 @@
           <div class="inner-content">
             <div class="inner-header">
               <p class="title">Exercise</p>
-              <button class="card-btn"><img src="./assets/images/icon-ellipsis.svg" width="21" heigh="5" alt="icon of ellipsis"></button>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
             </div>
             <div class="inner-body">
               <p class="current"><span class="current-hours">4</span>hrs</p>
@@ -87,7 +96,9 @@
           <div class="inner-content">
             <div class="inner-header">
               <p class="title">Social</p>
-              <button class="card-btn"><img src="./assets/images/icon-ellipsis.svg" width="21" heigh="5" alt="icon of ellipsis"></button>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
             </div>
             <div class="inner-body">
               <p class="current"><span class="current-hours">5</span>hrs</p>
@@ -100,7 +111,9 @@
           <div class="inner-content">
             <div class="inner-header">
               <p class="title">Self Care</p>
-              <button class="card-btn"><img src="./assets/images/icon-ellipsis.svg" width="21" heigh="5" alt="icon of ellipsis"></button>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
             </div>
             <div class="inner-body">
               <p class="current"><span class="current-hours">2</span>hrs</p>

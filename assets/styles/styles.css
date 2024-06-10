@@ -189,6 +189,19 @@ main .time-tracking-dashboard {
   button {
     cursor: pointer;
   }
+
+  .time .time-btn:hover {
+    color: #FFFFFF;
+  }
+
+  .card .inner-content:hover {
+    background-color: #33397A;
+    cursor: pointer;
+  }
+
+  .card .inner-content .inner-header .card-btn:hover path {
+    fill: #D8D8D8;
+  }
 }
 @media only screen and (min-width: 1158px) {
   main {
